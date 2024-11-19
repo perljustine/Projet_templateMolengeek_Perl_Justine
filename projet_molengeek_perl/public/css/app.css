@@ -1,4 +1,14 @@
 @charset "UTF-8";
+#Pic_header {
+  background-color: rgba(255, 255, 255, 0.6156862745);
+  height: 180%;
+  width: 100%;
+}
+
+header {
+  background-image: url(../img/hero-bg.jpg);
+}
+
 nav {
   justify-content: space-around;
 }
