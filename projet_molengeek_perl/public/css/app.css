@@ -19,10 +19,6 @@ header {
 nav {
   justify-content: space-around;
 }
-.custom-badge {
-  color: #0D6EE9;
-}
-
 .services_options {
   display: flex;
   justify-content: center;
