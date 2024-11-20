@@ -52,16 +52,34 @@ nav {
 }
 
 .service-options {
+  display: flex;
   justify-content: center;
   align-content: center;
-}
-.service-options .col-lg-12 {
-  margin: 0 1rem;
 }
 .service-options .col-lg-12 .custom-card {
   height: 300px;
   width: 300px;
   border-radius: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.service-options .col-lg-12 .custom-card .icon_services {
+  margin-bottom: 1rem;
+}
+.service-options .col-lg-12 .custom-card .icon_services .img-services {
+  width: 20%;
+  height: auto;
+}
+.service-options .col-lg-12 .custom-card h3, .service-options .col-lg-12 .custom-card .h3 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+.service-options .col-lg-12 .custom-card p {
+  font-size: 1rem;
+  color: #6c757d;
 }
 
 /*!
