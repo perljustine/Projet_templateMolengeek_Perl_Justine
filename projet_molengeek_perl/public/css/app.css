@@ -1,18 +1,17 @@
-/* Error: Can't find stylesheet to import.
- *    ,
- * 12 | @import ./_services2
- *    |         ^^^^^^^^^^^^
- *    '
- *   src/sass/modules/_style.sass 12:9  @import
- *   src/sass/app.sass 6:9              root stylesheet */
+@charset "UTF-8";
+#Pic_header {
+  background-color: rgba(255, 255, 255, 0.6);
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+header {
+  background-image: url(../img/hero-bg.jpg);
+  background-size: cover;
+  height: 60Vh;
+}
 
-<<<<<<< HEAD
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-=======
 .card_container {
   flex-direction: column;
   text-align: left;
@@ -33,14 +32,11 @@ nav {
   margin: 0 1rem;
 }
 .services_options .col .card {
->>>>>>> featured
   padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a    \2577 \a 12 \2502  @import ./_services2\a    \2502          ^^^^^^^^^^^^\a    \2575 \a   src/sass/modules/_style.sass 12:9  @import\a   src/sass/app.sass 6:9              root stylesheet";
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: radius 3px;
+  border: none;
 }
-<<<<<<< HEAD
-=======
 .services_options .col .custom-card {
   height: 200px;
   width: 200px;
@@ -57,6 +53,42 @@ nav {
 }
 .services_options .col .custom-card .card-body .card-text {
   font-size: 0.8rem;
+  color: #6c757d;
+}
+
+.services2 .custom-badge {
+  background-color: #E7F1FE;
+  color: #0D6EE9;
+}
+
+.service-options {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.service-options .col-lg-12 .custom-card {
+  height: 300px;
+  width: 300px;
+  border-radius: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.service-options .col-lg-12 .custom-card .icon_services {
+  margin-bottom: 1rem;
+}
+.service-options .col-lg-12 .custom-card .icon_services .img-services {
+  width: 20%;
+  height: auto;
+}
+.service-options .col-lg-12 .custom-card h3, .service-options .col-lg-12 .custom-card .h3 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+.service-options .col-lg-12 .custom-card p {
+  font-size: 1rem;
   color: #6c757d;
 }
 
@@ -11907,4 +11939,3 @@ textarea.form-control-lg {
 }
 
 /*# sourceMappingURL=app.css.map */
->>>>>>> featured
