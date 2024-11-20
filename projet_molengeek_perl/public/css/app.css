@@ -1,10 +1,11 @@
-/* Error: Can't find stylesheet to import.
- *    ,
- * 12 | @import ./_services2
- *    |         ^^^^^^^^^^^^
- *    '
- *   src/sass/modules/_style.sass 12:9  @import
- *   src/sass/app.sass 6:9              root stylesheet */
+/* Error: Undefined variable.
+ *   ,
+ * 3 |         background-color: $primarycolor
+ *   |                           ^^^^^^^^^^^^^
+ *   '
+ *   src/sass/modules/_services2.sass 3:27  @import
+ *   src/sass/modules/_style.sass 12:9      @import
+ *   src/sass/app.sass 6:9                  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +15,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a    \2577 \a 12 \2502  @import ./_services2\a    \2502          ^^^^^^^^^^^^\a    \2575 \a   src/sass/modules/_style.sass 12:9  @import\a   src/sass/app.sass 6:9              root stylesheet";
+  content: "Error: Undefined variable.\a   \2577 \a 3 \2502          background-color: $primarycolor\a   \2502                            ^^^^^^^^^^^^^\a   \2575 \a   src/sass/modules/_services2.sass 3:27  @import\a   src/sass/modules/_style.sass 12:9      @import\a   src/sass/app.sass 6:9                  root stylesheet";
 }
