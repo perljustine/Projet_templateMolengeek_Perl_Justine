@@ -10,7 +10,7 @@
 <body>
 <!-- Création de la nav bar -->
 <nav class="navbar navbar-expand-lg d-flex "> <!-- navbar expand lg veut dire que la nav s'étend sur tout la longueur-->
-    <div class="container-fluid d-flex align-items-baseline w-75"> <!-- div en flex pour pouvoir changer les élements sur la mêmeligne, le alignitemsbaseline permet de les avoir au même niveau-->
+    <div class="container-fluid d-flex ps-0 align-items-baseline w-75"> <!-- div en flex pour pouvoir changer les élements sur la mêmeligne, le alignitemsbaseline permet de les avoir au même niveau-->
         <a id="Logo" class="navbar-brand d-flex" href="#" style="font-size:2em;">Molengeek <span class="text-primary">.</span></a> <!-- le span sert à isoler le . pour lui donner une couleur à part du reste-->
         <div class="navbar-nav"> <!-- div a bar pour le menu , possibilité de le faire déroulant grâce à son isolement dans la div-->
             <a class="nav-link" aria-current="page gap-2" href="#">Home</a>
@@ -23,8 +23,8 @@
     </div>
 </nav>
 <header class=" bg-light d-flex align-items-center justify-content-center" style="height:80Vh;">
-    <div id="Pic_header"  class="d-flex w-100 h-100 align-items-center justify-content-center" >
-        <div class="card_container text-start">
+    <div id="Pic_header"  class="d-flex w-75 h-100 align-items-center" >
+        <div class="card_container text-start pt-3 pb-3">
                 <h1>Welcome to <span class="text-primary">Molengeek</span></h1>
                 <p class="card-text">Mon projet du vendredi</p>
                 <button class=" btn btn-primary px-4 "><small>GET STARTED</small></button>
