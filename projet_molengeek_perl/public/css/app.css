@@ -100,12 +100,31 @@ nav {
   color: #6c757d;
 }
 
+.team {
+  height: 80Vh;
+  background-color: rgba(231, 241, 254, 0.4823529412);
+}
 .team .container .custom-badge {
   background-color: rgba(231, 241, 254, 0.9176470588);
   color: #0D6EE9;
 }
 .team .container h3, .team .container .h3 {
   gap: 5px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.team .container p {
+  line-height: 0.5em;
+}
+.team div .col .custom-card {
+  height: 250px;
+  width: 250px;
+  border-radius: 0px;
+  border: 1px rgba(231, 241, 254, 0.9176470588);
+  box-shadow: 1px 4px 8px #cde0fa;
+}
+.team div .col .custom-card .card-body {
+  background-color: white;
 }
 
 /*!
