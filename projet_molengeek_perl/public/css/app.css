@@ -107,11 +107,12 @@ nav {
 .team .container .custom-badge {
   background-color: rgba(231, 241, 254, 0.9176470588);
   color: #0D6EE9;
+  font-size: 0.7rem;
+  font-weight: bold;
 }
 .team .container h3, .team .container .h3 {
-  gap: 5px;
   font-weight: bold;
-  margin-bottom: 5px;
+  padding-top: 10px;
 }
 .team .container p {
   line-height: 0.5em;
