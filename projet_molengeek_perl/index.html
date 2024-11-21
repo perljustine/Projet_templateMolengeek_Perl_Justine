@@ -11,35 +11,35 @@
 <body>
 <!-- Création de la nav bar -->
 <nav class="navbar navbar-expand-lg d-flex "> <!-- navbar expand lg veut dire que la nav s'étend sur tout la longueur-->
-    <div class="container-fluid d-flex ps-0 align-items-baseline w-75"> <!-- div en flex pour pouvoir changer les élements sur la mêmeligne, le alignitemsbaseline permet de les avoir au même niveau-->
-        <a id="Logo" class="navbar-brand d-flex" href="#" style="font-size:2em;">Molengeek <span class="text-primary">.</span></a> <!-- le span sert à isoler le . pour lui donner une couleur à part du reste-->
-        <div class="navbar-nav"> <!-- div a bar pour le menu , possibilité de le faire déroulant grâce à son isolement dans la div-->
-            <a class="nav-link" aria-current="page gap-2" href="#">Home</a>
-            <a class="nav-link" href="#">Featured</a>
-            <a class="nav-link" href="#">Testimonials</a>
-            <a class="nav-link" href="#">Services</a>
-            <a class="nav-link" href="#">Team</a>
-            <a class="nav-link" href="#">Contact</a>
+    <div class="container-fluid d-flex ps-0 align-items-baseline w-75 flex-column flex-lg-row"> <!-- div en flex pour pouvoir changer les élements sur la mêmeligne, le alignitemsbaseline permet de les avoir au même niveau / le flex-column vient agir quand l'écran devient plus petit-->
+        <a id="Logo" class="navbar-brand d-flex mb-3 mb-lg-0" href="#" style="font-size:2em;">Molengeek <span class="text-primary">.</span></a> <!-- le span sert à isoler le . pour lui donner une couleur à part du reste-->
+        <div class="navbar-nav flex-row justify-content-center flex-wrap"> <!-- div a bar pour le menu , possibilité de le faire déroulant grâce à son isolement dans la div-->
+            <a class="nav-link me-2 me-lg-3 me-md-1" aria-current="page gap-2" href="#">Home</a>
+            <a class="nav-link me-2 me-lg-3 me-md-1" href="#">Featured</a> <!-- me mets du margin end , le lg lemet quand il est en px large -->
+            <a class="nav-link me-2 me-lg-3 me-md-1" href="#">Testimonials</a>
+            <a class="nav-link me-2 me-lg-3 me-md-1" href="#">Services</a>
+            <a class="nav-link me-2 me-lg-3 me-md-1" href="#">Team</a>
+            <a class="nav-link me-2 me-lg-3 me-md-1" href="#">Contact</a>
         </div>
     </div>
 </nav>
-<header class=" bg-light d-flex align-items-center justify-content-center" style="height:80Vh;">
-    <div id="Pic_header"  class="d-flex w-75 h-100 align-items-center" > <!--header en flex avec une width de 75 pour aligner le texte dans le header avec la navbar-->
-        <div class="card_container text-start pt-3 pb-3">
-                <h1>Welcome to <span class="text-primary">Molengeek</span></h1>
+<header class=" bg-light d-flex align-items-center justify-content-center">
+    <div id="Pic_header"  class=" w-75" > <!--header avec une width de 75 pour aligner le texte dans le header avec la navbar-->
+        <div class="card_container text-center text-lg-start">
+                <h1>Welcome to <span class="text-primary">Molengeek</span></h1> 
                 <p class="card-text">Mon projet du vendredi</p>
-                <button class=" btn btn-primary px-4 "><small>GET STARTED</small></button>
+                <button class=" btn btn-primary px-4 mt-3 "><small>GET STARTED</small></button>
         </div>    
     </div>
 </header>
-<section class="services pt-5 mb-5 d-flex row ">
+<section class="services pt-5 mb-5 d-flex row">
     <div class="container text-center">
         <a href="#" class="btn custom-badge rounded-5 mb-2"><strong>FEATURED SERVICES</strong></a> <!-- ajout custom-badge a la propriété btn de bootstrap pour pouvoir le personnaliser-->
         <h3 class="card-title pb-3">Read <span class="text-primary">Featured Services</span></h3><!-- span permet d'isoler l'élément pour lui donner une autre couleur-->
     </div>
     
     <div class=" container services_options d-flex p-3 w-75 gap-2"> <!-- la width 75 permet de contenir la div centrée sur la page-->
-        <div class="col"> <!-- utilisation de 4colonnes pour cette section de 75% en width-->
+        <div class="col-md-6 col-lg-4"> <!-- utilisation de 4colonnes pour cette section de 75% en width-->
           <div class="card custom-card">
             <img src="./public/img/team/feuile.png" class="card-img-top pt-1" alt="...">
             <div class="card-body">
@@ -48,7 +48,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-md-6 col-lg-4">
           <div class="card custom-card"> <!-- custom card me permet de donner la taill que je veux au cartes qui ont déjà un style prédéfini par bootstrap-->
             <img src="./public/img/team/internet.png" class="card-img-top pt-1" alt="..."> <!-- pt = padding top pour que l'image ne touche pas le bord de la carte-->
             <div class="card-body">
@@ -57,7 +57,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-md-6 col-lg-4">
           <div class="card custom-card">
             <img src="./public/img/team/fuel.png" class="card-img-top pt-1" alt="...">
             <div class="card-body">
@@ -66,7 +66,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-md-6 col-lg-4">
           <div class="card custom-card">
             <img src="./public/img/team/planet.png" class="card-img-top pt-1" alt="...">
             <div class="card-body">
