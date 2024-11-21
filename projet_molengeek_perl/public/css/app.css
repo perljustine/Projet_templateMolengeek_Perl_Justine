@@ -38,11 +38,11 @@ nav {
   border: none;
 }
 .services_options .col .custom-card {
-  height: 220px;
-  width: 220px;
+  height: 200px;
+  width: 200px;
 }
 .services_options .col .custom-card .card-img-top {
-  width: 25%;
+  width: 20%;
   height: auto;
   margin-left: 1em;
   display: block;
@@ -52,10 +52,8 @@ nav {
   font-weight: bold;
 }
 .services_options .col .custom-card .card-body .card-text {
-  margin-top: 15px;
   font-size: 0.8rem;
   color: #6c757d;
-  line-height: 1.5rem;
 }
 
 .services2 .custom-badge {
