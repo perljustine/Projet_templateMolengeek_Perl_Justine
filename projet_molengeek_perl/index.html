@@ -39,7 +39,7 @@
     </div>
 
     
-    <div class=" container services_options flex-column flex-lg-row  p-3 w-75"> <!-- la width 75 permet de contenir la div centrée sur la page-->
+    <div class=" container services_options flex-column flex-lg-row p-3 w-75"> <!-- la width 75 permet de contenir la div centrée sur la page-->
         <div class="col"> <!-- utilisation de 4colonnes pour cette section de 75% en width-->
           <div class="card custom-card">
             <img src="./public/img/team/feuile.png" class="card-img-top pt-1" alt="...">
@@ -78,15 +78,17 @@
         </div>
       </div>
 </section>
-<div id="carouselExample" class="carousel slide">
+<div id="carouselExample"  class="carousel slide">
     <div class="carousel-inner">
       <div class="carousel-item active d-flex position-relative" style="filter: brightness(.3)"> <!-- ici l'image est en position relative pour laisser paraitre le txte au dessus-->
         <img src="./public/img/testi.jpg" class="d-block w-75" alt="..." id="Jpg1"> <!-- j'ai mis deux img avec des w différentes afin de donner l'effet de dédoublment-->
         <img src="./public/img/testi.jpg" class="d-block w-100" alt="..." id="Jpg2">
       </div>
-    <div class="carousel-caption position-absolute top-50 pb-sm-5 start-0 text-center w-100 px-3  px-2 px-sm-3"> <!-- carousel caption est une propriété déjà existant de sass qui permet d'écrir par dessus le carousel-->
-        <h2 class="text-primary"> Testimonial 3</h2>
-        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sed maxime blanditiis? Aliquam libero similique.</p>
+    <div class="carousel-caption position-absolute start-0 text-center w-100" style="bottom:10rem"> <!-- carousel caption est une propriété déjà existant de sass qui permet d'écrir par dessus le carousel-->
+        <h2 class="text-primary"  style="line-height:5rem"> Testimonial 3</h2>
+        <p class=""  style="line-height:0.5rem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sed maxime blanditiis? Aliquam libero.</p>
+        <p  style="line-height:0.5rem"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, laboriosam?</p>
+        <p  style="line-height:0.5rem"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev"> <!-- système de bouton pour slider déjà pré enregistré par bootstrap-->
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -172,40 +174,40 @@
         <p class="">nostrum sint tempore eligendi debitis nesciunt</p>
     </div>
         
-    <div class="row row-cols-lg-6 cols-md-4 pb-5 align-items-center justify-content-center gap-5 ">  <!-- template bootstrap où j'ai rajouté un gap 5 et un justifycontent center pour la mise en page des card entre elles et dans la section-->
-        <div class="col">  <!-- col sans rien aide a place les colonnes du grid de manière homogène entre elle , en donnant une valeur aux col on leur fait prendre une certaine place dans la page de 12colonnes par défaut-->
-          <div class="card custom-card"> <!-- le custom card me permet de nouveau de modifier la card avec le style prédéfini , de la manière dont j'ai envie-->
-               <img src="./public/img/team/team-1.jpg" class="card-img-top" alt="...">
-                <div class="card-body"> <!-- changement de style dans le SASS concerné-->
-                <h5 class="card-title bold">Walter White</h5>
-                <p class="card-text">Chief executive officer</p>
+    <div class="row row-cols-lg-6 cols-md-6 pb-5 align-items-center justify-content-center gap-5 ">  <!-- template bootstrap où j'ai rajouté un gap 5 et un justifycontent center pour la mise en page des card entre elles et dans la section-->
+        <div class="col-sm-12">  <!-- col sans rien aide a place les colonnes du grid de manière homogène entre elle , en donnant une valeur aux col on leur fait prendre une certaine place dans la page de 12colonnes par défaut-->
+          <div class="card custom-card " style="box-shadow: 1px 4px 8px #d7d7d7; border:none; border-radius: 0px;"> <!-- le custom card me permet de nouveau de modifier la card avec le style prédéfini , de la manière dont j'ai envie-->
+            <img src="./public/img/team/team-1.jpg" class="card-img-top rounded-0" alt="...">
+            <div class="card-body"> <!-- changement de style dans le SASS concerné-->
+              <h5 class="card-title bold">Walter White</h5>
+              <p class="card-text text-secondary">Chief executive officer</p>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card custom-card">
-            <img src="./public/img/team/team-2.jpg" class="card-img-top" alt="...">
+          <div class="card custom-card" style="box-shadow: 1px 4px 8px #d7d7d7; border:none; border-radius: 0px;">
+            <img src="./public/img/team/team-2.jpg" class="card-img-top rounded-0" alt="...">
             <div class="card-body">
               <h5 class="card-title">Sarah Jhonson</h5>
-              <p class="card-text"> Product manager</p>
+              <p class="card-text text-secondary"> Product manager</p>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card custom-card">
-            <img src="./public/img/team/team-3.jpg" class="card-img-top" alt="...">
+          <div class="card custom-card" style="box-shadow: 1px 4px 8px #d7d7d7; border:none; border-radius: 0px;">
+            <img src="./public/img/team/team-3.jpg" class="card-img-top rounded-0" alt="...">
             <div class="card-body">
               <h5 class="card-title">William Anderson </h5>
-              <p class="card-text">CTO</p>
+              <p class="card-text text-secondary">CTO</p>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card custom-card">
-            <img src="./public/img/team/team-4.jpg" class="card-img-top" alt="...">
+          <div class="card custom-card" style="box-shadow: 1px 4px 8px #d7d7d7; border:none; border-radius: 0px;">
+            <img src="./public/img/team/team-4.jpg" class="card-img-top rounded-0" alt="...">
             <div class="card-body">
               <h5 class="card-title">Amanda Jepsen</h5>
-              <p class="card-text">Accountant</p>
+              <p class="card-text text-secondary">Accountant</p>
             </div>
           </div>
         </div>
@@ -221,7 +223,7 @@
     </div>
     <div class="grille container w-75">  <!-- même width que quasi toutes les sections pour l'homogénité-->
         <div class="row">
-            <div class="col-6 mb-4 "> <!--col6 permet de lui faire prendre la moité de la width pour que les deux autres card prennent l'autre moitié entre elles-->
+            <div class="col-12 col-sm-6 mb-4 "> <!--col6 permet de lui faire prendre la moité de la width pour que les deux autres card prennent l'autre moitié entre elles-->
                 <div class="card rounded-0 custom-card h-100 text-center" style="box-shadow: 1px 4px 8px #d7d7d7; border:none">
                     <div class="card-body">
                         <div class="icon-contact mb-3">
@@ -255,8 +257,8 @@
                 </div>
             </div>
         </div>
-        <div class="row col-lg-12 d-flex flex-lg-row flex-md-column justify-content-center align-items-center"> <!-- les d-flex va permettre de tout mettre en page dans la section surtout pour le bouton send message-->
-            <div class="col-6 mb-4">
+        <div class="row d-flex flex-lg-row flex-md-column justify-content-center align-items-center"> <!-- les d-flex va permettre de tout mettre en page dans la section surtout pour le bouton send message-->
+            <div class="col-12 col-md-6 mb-4">
                 <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.773195066936!2d4.343956615747289!3d50.85593097953283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c37878d7e045%3A0xbbe35e45c7254013!2sPlace%20de%20la%20Minoterie%2010%2C%201080%20Molenbeek-Saint-Jean%2C%20Belgique!5e0!3m2!1sen!2sbe!4v1695894097604!5m2!1sen!2sbe" 
                 width="100%" 
@@ -267,7 +269,7 @@
                 referrerpolicy="no-referrer-when-downgrade">
                 </iframe> <!-- link js dans le head pour importer la carte en live de google -->
             </div>
-            <form class="col-6 mb-4 d-flex p-4" style="box-shadow: 1px 4px 8px #d7d7d7; border:none"> <!-- col 6 car la section prend la moitié avec la carte chacune est en col 6 -->
+            <form class="col-12 col-md-6 mb-4 d-flex p-4" style="box-shadow: 1px 4px 8px #d7d7d7; border:none"> <!-- col 6 car la section prend la moitié avec la carte chacune est en col 6 -->
                 <div class="form  row d-flex justify-content-space-evenly">
                     <div class="form row col-6 ms-2 mb-4"> <!-- propriétés de mise en page entre les items du form-->
                         <input type="text" class="form-control rounded-0" placeholder="Your Name">
