@@ -19,11 +19,11 @@
             <a class="nav-link me-2 me-lg-3 me-md-1" href="#">Testimonials</a>
             <a class="nav-link me-2 me-lg-3 me-md-1" href="#">Services</a>
             <a class="nav-link me-2 me-lg-3 me-md-1" href="#">Team</a>
-            <a class="nav-link me-2 me-lg-3 me-md-1" href="#">Contact</a>
+            <a class="nav-link me-2 me-lg-3 me-md-1" href="#">Contact</a> <!--taille de responsive prédéfinie par bootstrap -->
         </div>
     </div>
 </nav>
-<header class=" bg-light d-flex align-items-center justify-content-center">
+<header class=" bg-light d-flex align-items-center justify-content-center"> 
     <div id="Pic_header"  class=" w-75" > <!--header avec une width de 75 pour aligner le texte dans le header avec la navbar-->
         <div class="card_container text-center text-lg-start">
                 <h1>Welcome to <span class="text-primary">Molengeek</span></h1> 
@@ -40,7 +40,7 @@
 
     
     <div class=" container services_options flex-column flex-lg-row p-3 w-75"> <!-- la width 75 permet de contenir la div centrée sur la page-->
-        <div class="col"> <!-- utilisation de 4colonnes pour cette section de 75% en width-->
+        <div class="col"> 
           <div class="card custom-card">
             <img src="./public/img/team/feuile.png" class="card-img-top pt-1" alt="...">
             <div class="card-body">
@@ -50,7 +50,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card custom-card"> <!-- custom card me permet de donner la taill que je veux au cartes qui ont déjà un style prédéfini par bootstrap-->
+          <div class="card custom-card"> <!-- custom card me permet de donner la taille que je veux au cartes qui ont déjà un style prédéfini par bootstrap-->
             <img src="./public/img/team/internet.png" class="card-img-top pt-1" alt="..."> <!-- pt = padding top pour que l'image ne touche pas le bord de la carte-->
             <div class="card-body">
               <h5 class="card-title">Lorem, ipsum.</h5>
@@ -81,14 +81,14 @@
 <div id="carouselExample"  class="carousel slide">
     <div class="carousel-inner">
       <div class="carousel-item active d-flex position-relative" style="filter: brightness(.3)"> <!-- ici l'image est en position relative pour laisser paraitre le txte au dessus-->
-        <img src="./public/img/testi.jpg" class="d-block w-75" alt="..." id="Jpg1"> <!-- j'ai mis deux img avec des w différentes afin de donner l'effet de dédoublment-->
-        <img src="./public/img/testi.jpg" class="d-block w-100" alt="..." id="Jpg2">
+        <img src="./public/img/testi.jpg" class="d-block w-75" style="height:50Vh" alt="..." id="Jpg1"> <!-- j'ai mis deux img avec des w différentes afin de donner l'effet de dédoublment-->
+        <img src="./public/img/testi.jpg" class="d-block w-100" style="height:50Vh" alt="..." id="Jpg2">
       </div>
-    <div class="carousel-caption position-absolute start-0 text-center w-100" style="bottom:10rem"> <!-- carousel caption est une propriété déjà existant de sass qui permet d'écrir par dessus le carousel-->
+    <div class="carousel-caption position-absolute start-0 text-center w-100" style="bottom:4rem"> <!-- carousel caption est une propriété déjà existant de sass qui permet d'écrir par dessus le carousel-->
         <h2 class="text-primary"  style="line-height:5rem"> Testimonial 3</h2>
-        <p class=""  style="line-height:0.5rem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sed maxime blanditiis? Aliquam libero.</p>
-        <p  style="line-height:0.5rem"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, laboriosam?</p>
-        <p  style="line-height:0.5rem"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sed maxime blanditiis? Aliquam libero.</p>
+        <p > Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, laboriosam?</p>
+        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev"> <!-- système de bouton pour slider déjà pré enregistré par bootstrap-->
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -169,13 +169,13 @@
 <section class="team p-5 d-flex flex-column align-items-center">  <!-- padding top et bottom sur la section-->
     <div class="container text-center mb-5"> <!-- le text center permet d'écrir au milieu de la section même que il n'y a pas de d-flex-->
         <a href="#" class="btn custom-badge rounded-5 mb-2 "><strong>TEAM</strong></a>
-        <h3 class="card-title g-2 mb-4">Our Hardworking  <span class="text-primary">Team</span></h3> <!-- il y a un mb afin de séparer le titre du p comme sur la représentation-->
-        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam facilis asperiores.</p>
+        <h3 class="card-title g-2 mb-3">Our Hardworking  <span class="text-primary">Team</span></h3> <!-- il y a un mb afin de séparer le titre du p comme sur la représentation-->
+        <p class=" mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam facilis asperiores.</p>
         <p class="">nostrum sint tempore eligendi debitis nesciunt</p>
     </div>
         
     <div class="row row-cols-lg-6 cols-md-6 pb-5 align-items-center justify-content-center gap-5 ">  <!-- template bootstrap où j'ai rajouté un gap 5 et un justifycontent center pour la mise en page des card entre elles et dans la section-->
-        <div class="col-sm-12">  <!-- col sans rien aide a place les colonnes du grid de manière homogène entre elle , en donnant une valeur aux col on leur fait prendre une certaine place dans la page de 12colonnes par défaut-->
+        <div class="col-sm-6">  <!-- col sans rien aide a place les colonnes du grid de manière homogène entre elle , en donnant une valeur aux col on leur fait prendre une certaine place dans la page de 12colonnes par défaut-->
           <div class="card custom-card " style="box-shadow: 1px 4px 8px #d7d7d7; border:none; border-radius: 0px;"> <!-- le custom card me permet de nouveau de modifier la card avec le style prédéfini , de la manière dont j'ai envie-->
             <img src="./public/img/team/team-1.jpg" class="card-img-top rounded-0" alt="...">
             <div class="card-body"> <!-- changement de style dans le SASS concerné-->
@@ -184,7 +184,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-sm-6">
           <div class="card custom-card" style="box-shadow: 1px 4px 8px #d7d7d7; border:none; border-radius: 0px;">
             <img src="./public/img/team/team-2.jpg" class="card-img-top rounded-0" alt="...">
             <div class="card-body">
@@ -193,7 +193,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-sm-6">
           <div class="card custom-card" style="box-shadow: 1px 4px 8px #d7d7d7; border:none; border-radius: 0px;">
             <img src="./public/img/team/team-3.jpg" class="card-img-top rounded-0" alt="...">
             <div class="card-body">
@@ -202,7 +202,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-sm-6">
           <div class="card custom-card" style="box-shadow: 1px 4px 8px #d7d7d7; border:none; border-radius: 0px;">
             <img src="./public/img/team/team-4.jpg" class="card-img-top rounded-0" alt="...">
             <div class="card-body">
@@ -220,6 +220,7 @@
             <h3 class="card-title g-2 mb-4 text-primary">Contact Us</h3>
             <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam facilis asperiores.</p>
             <p class="">nostrum sint tempore eligendi debitis nesciunt</p>
+        </div>
     </div>
     <div class="grille container w-75">  <!-- même width que quasi toutes les sections pour l'homogénité-->
         <div class="row">
@@ -269,7 +270,7 @@
                 referrerpolicy="no-referrer-when-downgrade">
                 </iframe> <!-- link js dans le head pour importer la carte en live de google -->
             </div>
-            <form class="col-12 col-md-6 mb-4 d-flex p-4" style="box-shadow: 1px 4px 8px #d7d7d7; border:none"> <!-- col 6 car la section prend la moitié avec la carte chacune est en col 6 -->
+            <form class="col-12 col-md-6 mb-4 p-4" style="box-shadow: 1px 4px 8px #d7d7d7; border:none"> <!-- col 6 car la section prend la moitié avec la carte chacune est en col 6 -->
                 <div class="form  row d-flex justify-content-space-evenly">
                     <div class="form row col-6 ms-2 mb-4"> <!-- propriétés de mise en page entre les items du form-->
                         <input type="text" class="form-control rounded-0" placeholder="Your Name">
