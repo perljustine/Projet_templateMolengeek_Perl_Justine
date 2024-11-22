@@ -1,9 +1,9 @@
-/* Error: Expected identifier.
+/* Error: Can't find stylesheet to import.
  *    ,
- * 12 | =======
- *    |  ^
+ * 12 | @import ./_contact
+ *    |         ^^^^^^^^^^
  *    '
- *   src/sass/modules/_style.sass 12:2  @import
+ *   src/sass/modules/_style.sass 12:9  @import
  *   src/sass/app.sass 6:9              root stylesheet */
 
 body::before {
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Expected identifier.\a    \2577 \a 12 \2502  =======\a    \2502   ^\a    \2575 \a   src/sass/modules/_style.sass 12:2  @import\a   src/sass/app.sass 6:9              root stylesheet";
+  content: "Error: Can't find stylesheet to import.\a    \2577 \a 12 \2502  @import ./_contact\a    \2502          ^^^^^^^^^^\a    \2575 \a   src/sass/modules/_style.sass 12:9  @import\a   src/sass/app.sass 6:9              root stylesheet";
 }
