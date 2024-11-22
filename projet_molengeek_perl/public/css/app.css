@@ -85,6 +85,11 @@ footer .container p span {
   line-height: 1.5rem;
 }
 
+@media (min-width: 768px) {
+  .services .services_options .container .col .custom-card {
+    max-width: 300px;
+  }
+}
 .services2 .custom-badge {
   background-color: rgba(231, 241, 254, 0.9176470588);
   color: #0D6EE9;
@@ -147,16 +152,16 @@ footer .container p span {
   font-weight: bold;
   margin-bottom: 5px;
 }
-.team .container p {
-  line-height: 0.5em;
+.team .container .row {
+  padding-bottom: 3rem;
 }
-.team div .col .custom-card {
+.team .container .row .col .custom-card {
   height: 250px;
   width: 250px;
   border-radius: 0px;
   border: 1px rgba(231, 241, 254, 0.9176470588);
 }
-.team div .col .custom-card .card-body {
+.team .container .row .col .custom-card .card-body {
   background-color: white;
 }
 

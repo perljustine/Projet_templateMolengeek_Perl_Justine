@@ -32,13 +32,14 @@
         </div>    
     </div>
 </header>
-<section class="services pt-5 mb-5 ">
+<section class="services pt-5 mb-5 flex-md-column align-content-center">
     <div class="container text-center">
         <a href="#" class="btn custom-badge rounded-5 mb-2"><strong>FEATURED SERVICES</strong></a> <!-- ajout custom-badge a la propriété btn de bootstrap pour pouvoir le personnaliser-->
         <h3 class="card-title pb-3">Read <span class="text-primary">Featured Services</span></h3><!-- span permet d'isoler l'élément pour lui donner une autre couleur-->
     </div>
+
     
-    <div class=" container services_options  p-3 w-75"> <!-- la width 75 permet de contenir la div centrée sur la page-->
+    <div class=" container services_options flex-column flex-lg-row  p-3 w-75"> <!-- la width 75 permet de contenir la div centrée sur la page-->
         <div class="col"> <!-- utilisation de 4colonnes pour cette section de 75% en width-->
           <div class="card custom-card">
             <img src="./public/img/team/feuile.png" class="card-img-top pt-1" alt="...">
@@ -163,7 +164,7 @@
         </div>
     </div>
 </section>
-<section class="team p-3" style="height:86Vh">  <!-- padding top et bottom sur la section-->
+<section class="team p-5 d-flex flex-column align-items-center">  <!-- padding top et bottom sur la section-->
     <div class="container text-center mb-5"> <!-- le text center permet d'écrir au milieu de la section même que il n'y a pas de d-flex-->
         <a href="#" class="btn custom-badge rounded-5 mb-2 "><strong>TEAM</strong></a>
         <h3 class="card-title g-2 mb-4">Our Hardworking  <span class="text-primary">Team</span></h3> <!-- il y a un mb afin de séparer le titre du p comme sur la représentation-->
@@ -171,7 +172,7 @@
         <p class="">nostrum sint tempore eligendi debitis nesciunt</p>
     </div>
         
-    <div class="row row-cols-lg-6 cols-md-4 align-items-center justify-content-center gap-5 ">  <!-- template bootstrap où j'ai rajouté un gap 5 et un justifycontent center pour la mise en page des card entre elles et dans la section-->
+    <div class="row row-cols-lg-6 cols-md-4 pb-5 align-items-center justify-content-center gap-5 ">  <!-- template bootstrap où j'ai rajouté un gap 5 et un justifycontent center pour la mise en page des card entre elles et dans la section-->
         <div class="col">  <!-- col sans rien aide a place les colonnes du grid de manière homogène entre elle , en donnant une valeur aux col on leur fait prendre une certaine place dans la page de 12colonnes par défaut-->
           <div class="card custom-card"> <!-- le custom card me permet de nouveau de modifier la card avec le style prédéfini , de la manière dont j'ai envie-->
                <img src="./public/img/team/team-1.jpg" class="card-img-top" alt="...">
