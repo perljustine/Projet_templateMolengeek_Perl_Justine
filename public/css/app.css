@@ -1,7 +1,12 @@
 /* Error: Can't find stylesheet to import.
  *    ,
+<<<<<<< HEAD:public/css/app.css
  * 14 | @import ./_contact2
  *    |         ^^^^^^^^^^^
+=======
+ * 14 | @import ./_contact
+ *    |         ^^^^^^^^^^
+>>>>>>> 792beacaf312ed5f69893e158ac5aea234d722f5:projet_molengeek_perl/public/css/app.css
  *    '
  *   src/sass/modules/_style.sass 14:9  @import
  *   src/sass/app.sass 6:9              root stylesheet */
@@ -14,5 +19,9 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
+<<<<<<< HEAD:public/css/app.css
   content: "Error: Can't find stylesheet to import.\a    \2577 \a 14 \2502  @import ./_contact2\a    \2502          ^^^^^^^^^^^\a    \2575 \a   src/sass/modules/_style.sass 14:9  @import\a   src/sass/app.sass 6:9              root stylesheet";
+=======
+  content: "Error: Can't find stylesheet to import.\a    \2577 \a 14 \2502  @import ./_contact\a    \2502          ^^^^^^^^^^\a    \2575 \a   src/sass/modules/_style.sass 14:9  @import\a   src/sass/app.sass 6:9              root stylesheet";
+>>>>>>> 792beacaf312ed5f69893e158ac5aea234d722f5:projet_molengeek_perl/public/css/app.css
 }
