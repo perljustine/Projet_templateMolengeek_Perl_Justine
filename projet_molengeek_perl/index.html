@@ -5,41 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>projet_molengeek_perl</title>
     <link rel="stylesheet" href="./public/css/app.css">
-    <script src="https://kit.fontawesome.com/6c232a77f3.js" crossorigin="anonymous"></script>
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 <!-- Création de la nav bar -->
 <nav class="navbar navbar-expand-lg d-flex "> <!-- navbar expand lg veut dire que la nav s'étend sur tout la longueur-->
-    <div class="container-fluid d-flex align-items-baseline w-75"> <!-- div en flex pour pouvoir changer les élements sur la mêmeligne, le alignitemsbaseline permet de les avoir au même niveau-->
-        <a id="Logo" class="navbar-brand d-flex" href="#" style="font-size:2em;">Molengeek <span class="text-primary">.</span></a> <!-- le span sert à isoler le . pour lui donner une couleur à part du reste-->
-        <div class="navbar-nav"> <!-- div a bar pour le menu , possibilité de le faire déroulant grâce à son isolement dans la div-->
-            <a class="nav-link" aria-current="page gap-2" href="#">Home</a>
-            <a class="nav-link" href="#">Featured</a>
-            <a class="nav-link" href="#">Testimonials</a>
-            <a class="nav-link" href="#">Services</a>
-            <a class="nav-link" href="#">Team</a>
-            <a class="nav-link" href="#">Contact</a>
+    <div class="container-fluid d-flex ps-0 align-items-baseline w-75 flex-column flex-lg-row"> <!-- div en flex pour pouvoir changer les élements sur la mêmeligne, le alignitemsbaseline permet de les avoir au même niveau / le flex-column vient agir quand l'écran devient plus petit-->
+        <a id="Logo" class="navbar-brand d-flex mb-3 mb-lg-0" href="#" style="font-size:2em;">Molengeek <span class="text-primary">.</span></a> <!-- le span sert à isoler le . pour lui donner une couleur à part du reste-->
+        <div class="navbar-nav flex-row justify-content-center flex-wrap"> <!-- div a bar pour le menu , possibilité de le faire déroulant grâce à son isolement dans la div-->
+            <a class="nav-link me-2 me-lg-3 me-md-1" aria-current="page gap-2" href="#">Home</a>
+            <a class="nav-link me-2 me-lg-3 me-md-1" href="#">Featured</a> <!-- me mets du margin end , le lg lemet quand il est en px large -->
+            <a class="nav-link me-2 me-lg-3 me-md-1" href="#">Testimonials</a>
+            <a class="nav-link me-2 me-lg-3 me-md-1" href="#">Services</a>
+            <a class="nav-link me-2 me-lg-3 me-md-1" href="#">Team</a>
+            <a class="nav-link me-2 me-lg-3 me-md-1" href="#">Contact</a> <!--taille de responsive prédéfinie par bootstrap -->
         </div>
     </div>
 </nav>
-<header class=" bg-light d-flex align-items-center justify-content-center" style="height:80Vh;">
-    <div id="Pic_header"  class="d-flex w-100 h-100 align-items-center justify-content-center" >
-        <div class="card_container text-start">
-                <h1>Welcome to <span class="text-primary">Molengeek</span></h1>
+<header class=" bg-light d-flex align-items-center justify-content-center"> 
+    <div id="Pic_header"  class=" w-75" > <!--header avec une width de 75 pour aligner le texte dans le header avec la navbar-->
+        <div class="card_container text-center text-lg-start">
+                <h1>Welcome to <span class="text-primary">Molengeek</span></h1> 
                 <p class="card-text">Mon projet du vendredi</p>
-                <button class=" btn btn-primary px-4 "><small>GET STARTED</small></button>
+                <button class=" btn btn-primary px-4 mt-3 "><small>GET STARTED</small></button>
         </div>    
     </div>
 </header>
-<section class="services p-5 d-flex row ">
+<section class="services pt-5 mb-5 flex-md-column align-content-center">
     <div class="container text-center">
-        <a href="#" class="btn btn-primary rounded-5 mb-2"><strong>FEATURED SERVICES</strong></a>
-        <h3 class="card-title">Read <span>Featured Services</span></h3>
+        <a href="#" class="btn custom-badge rounded-5 mb-2"><strong>FEATURED SERVICES</strong></a> <!-- ajout custom-badge a la propriété btn de bootstrap pour pouvoir le personnaliser-->
+        <h3 class="card-title pb-3">Read <span class="text-primary">Featured Services</span></h3><!-- span permet d'isoler l'élément pour lui donner une autre couleur-->
     </div>
+
     
-    <div class=" container services_options d-flex p-5 w-75 gap-2">
-        <div class="col">
+    <div class=" container services_options flex-column flex-lg-row p-3 w-75"> <!-- la width 75 permet de contenir la div centrée sur la page-->
+        <div class="col"> 
           <div class="card custom-card">
             <img src="./public/img/team/feuile.png" class="card-img-top pt-1" alt="...">
             <div class="card-body">
@@ -49,8 +50,8 @@
           </div>
         </div>
         <div class="col">
-          <div class="card custom-card">
-            <img src="./public/img/team/internet.png" class="card-img-top pt-1" alt="...">
+          <div class="card custom-card"> <!-- custom card me permet de donner la taille que je veux au cartes qui ont déjà un style prédéfini par bootstrap-->
+            <img src="./public/img/team/internet.png" class="card-img-top pt-1" alt="..."> <!-- pt = padding top pour que l'image ne touche pas le bord de la carte-->
             <div class="card-body">
               <h5 class="card-title">Lorem, ipsum.</h5>
               <p class="card-text">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.</p>
@@ -62,7 +63,7 @@
             <img src="./public/img/team/fuel.png" class="card-img-top pt-1" alt="...">
             <div class="card-body">
               <h5 class="card-title">Lorem, ipsum.</h5>
-              <p class="card-text">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.</p>
+              <p class="card-text">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.</p> <!-- modif du style du txt en sass-->
             </div>
           </div>
         </div>
@@ -77,17 +78,19 @@
         </div>
       </div>
 </section>
-<div id="carouselExample" class="carousel slide">
+<div id="carouselExample"  class="carousel slide">
     <div class="carousel-inner">
-      <div class="carousel-item active d-flex position-relative">
-        <img src="./public/img/testi.jpg" class="d-block w-100" alt="..." id="Jpg1">
-        <img src="./public/img/testi.jpg" class="d-block w-100" alt="..." id="Jpg2">
+      <div class="carousel-item active d-flex position-relative" style="filter: brightness(.3)"> <!-- ici l'image est en position relative pour laisser paraitre le txte au dessus-->
+        <img src="./public/img/testi.jpg" class="d-block w-75" style="height:50Vh" alt="..." id="Jpg1"> <!-- j'ai mis deux img avec des w différentes afin de donner l'effet de dédoublment-->
+        <img src="./public/img/testi.jpg" class="d-block w-100" style="height:50Vh" alt="..." id="Jpg2">
       </div>
-    <div class="carousel-caption">
-        <h2 class="text-primary"> Testimonial 3</h2>
-        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sed maxime blanditiis? Aliquam libero similique.</p>
+    <div class="carousel-caption position-absolute start-0 text-center w-100" style="bottom:4rem"> <!-- carousel caption est une propriété déjà existant de sass qui permet d'écrir par dessus le carousel-->
+        <h2 class="text-primary"  style="line-height:5rem"> Testimonial 3</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sed maxime blanditiis? Aliquam libero.</p>
+        <p > Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, laboriosam?</p>
+        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev"> <!-- système de bouton pour slider déjà pré enregistré par bootstrap-->
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
@@ -96,19 +99,19 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-<section class="services2">
-    <div class="container w-50 p-5 text-center">
-        <a href="#" class=" btn btn-primary rounded-5 mb-2 "><strong>SERVICES</strong></a>
-        <h3 class="card-title p-3">Check our<span class="text-primary"> Services</span></h3>
+<section class="services2 mb-5"> <!-- mb donne une margin bottom en dessous de la section , la valeur est déja définie par bootstrap j'ai décidé de mettre 5 -->
+    <div class="container w-50 pt-5 mb-3 text-center"> <!-- je contiens la div dans un W50pour que c soit bien centré en milieu de pages j'ai appliqué ces propriétés a tous les titres de sections ainsi que les même propriétés sass pour avoir une page homogène dans la disposition-->
+        <a href="#" class=" btn custom-badge rounded-5 mb-1 "><strong>SERVICES</strong></a> <!-- rounded 5 permet de donner un aspect arrondi au bouton et le custom badge me permet de perosnnaliser la couleur du badge et de la font ici pareil je l'ai fais sur toutes les sections ayant un bouton -->
+        <h3 class="card-title">Check our<span class="text-primary"> Services</span></h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam facilis asperiores nostrum sint tempore eligendi debitis nesciunt.</p>
     </div>
-    <div class="service-options container w-75">
-        <div class="col-lg-12">
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
+    <div class="service-options container w-75 g-4"> <!-- cette div est contenu dans une W-75 comme quasi toutes les div de la page afin de garder une bonne mise en page-->
+        <div class="col-lg-12"> 
+            <div class="row g-4"> <!--j'ai rajouté un gap-4 pour pouvoir séparer les cartes entre elles-->
+                <div class="col-md-6 col-lg-4 ">  <!-- propriété bootstrap déja existante pour les carts-->
                     <div class="card custom-card p-4 text-center">
                         <div class="icon_services">
-                            <img class="img-services" src="./public/img/team/feuile.png">
+                            <i class="fa-solid fa-basketball"></i> <!-- icone font awesome link dans le head-->
                         </div>
                         <h3>Lorem Ipsum</h3>
                         <p class="text-muted"> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
@@ -117,7 +120,16 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="card custom-card text-center p-4">
                         <div class="icon_services">
-                            <img class="img-services" src="./public/img/team/feuile.png">
+                            <i class="fa-regular fa-file"></i>
+                        </div>
+                        <h3>Lorem Ipsum</h3>  <!-- modif dans SASS pour le h3 et p-->
+                        <p class="text-muted"> Lorem ipsum dolor sit amet consectetur adipisicing.</p> <!-- text-muted permet au texte d'être plus transparent que le reste-->
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card custom-card text-center p-4">
+                        <div class="icon_services">
+                            <i class="fa-solid fa-laptop"></i>
                         </div>
                         <h3>Lorem Ipsum</h3>
                         <p class="text-muted"> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
@@ -126,7 +138,7 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="card custom-card text-center p-4">
                         <div class="icon_services">
-                            <img class="img-services" src="./public/img/team/feuile.png">
+                            <i class="fa-solid fa-earth-americas"></i>
                         </div>
                         <h3>Lorem Ipsum</h3>
                         <p class="text-muted"> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
@@ -135,16 +147,7 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="card custom-card text-center p-4">
                         <div class="icon_services">
-                            <img class="img-services" src="./public/img/team/feuile.png">
-                        </div>
-                        <h3>Lorem Ipsum</h3>
-                        <p class="text-muted"> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card custom-card text-center p-4">
-                        <div class="icon_services">
-                            <img class="img-services" src="./public/img/team/feuile.png">
+                            <i class="fa-solid fa-desktop"></i>
                         </div>
                         <h3>Lorem Ipsum</h3>
                         <p class="text-muted"> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
@@ -153,7 +156,7 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="card custom-card text-center p-4">
                         <div class="icon_services ">
-                            <img class="img-services" src="./public/img/team/feuile.png">
+                            <i class="fa-solid fa-archway"></i>
                         </div>
                         <h3>Lorem Ipsum</h3>
                         <p class="text-muted"> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
@@ -163,6 +166,138 @@
         </div>
     </div>
 </section>
+<section class="team p-5 d-flex flex-column align-items-center">  <!-- padding top et bottom sur la section-->
+    <div class="container text-center mb-5"> <!-- le text center permet d'écrir au milieu de la section même que il n'y a pas de d-flex-->
+        <a href="#" class="btn custom-badge rounded-5 mb-2 "><strong>TEAM</strong></a>
+        <h3 class="card-title g-2 mb-3">Our Hardworking  <span class="text-primary">Team</span></h3> <!-- il y a un mb afin de séparer le titre du p comme sur la représentation-->
+        <p class=" mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam facilis asperiores.</p>
+        <p class="">nostrum sint tempore eligendi debitis nesciunt</p>
+    </div>
+        
+    <div class="row row-cols-lg-6 cols-md-6 pb-5 align-items-center justify-content-center gap-5 ">  <!-- template bootstrap où j'ai rajouté un gap 5 et un justifycontent center pour la mise en page des card entre elles et dans la section-->
+        <div class="col-sm-6">  <!-- col sans rien aide a place les colonnes du grid de manière homogène entre elle , en donnant une valeur aux col on leur fait prendre une certaine place dans la page de 12colonnes par défaut-->
+          <div class="card custom-card " style="box-shadow: 1px 4px 8px #d7d7d7; border:none; border-radius: 0px;"> <!-- le custom card me permet de nouveau de modifier la card avec le style prédéfini , de la manière dont j'ai envie-->
+            <img src="./public/img/team/team-1.jpg" class="card-img-top rounded-0" alt="...">
+            <div class="card-body"> <!-- changement de style dans le SASS concerné-->
+              <h5 class="card-title bold">Walter White</h5>
+              <p class="card-text text-secondary">Chief executive officer</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card custom-card" style="box-shadow: 1px 4px 8px #d7d7d7; border:none; border-radius: 0px;">
+            <img src="./public/img/team/team-2.jpg" class="card-img-top rounded-0" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Sarah Jhonson</h5>
+              <p class="card-text text-secondary"> Product manager</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card custom-card" style="box-shadow: 1px 4px 8px #d7d7d7; border:none; border-radius: 0px;">
+            <img src="./public/img/team/team-3.jpg" class="card-img-top rounded-0" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">William Anderson </h5>
+              <p class="card-text text-secondary">CTO</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card custom-card" style="box-shadow: 1px 4px 8px #d7d7d7; border:none; border-radius: 0px;">
+            <img src="./public/img/team/team-4.jpg" class="card-img-top rounded-0" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Amanda Jepsen</h5>
+              <p class="card-text text-secondary">Accountant</p>
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
+<section class="contact2 pt-4 pb-5"> <!-- padding top et bottom pour la mise en page de la section-->
+    <div class="contact container"> 
+        <div class="container text-center mb-5"> <!-- même propriétés que pour chaqque titre de la page-->
+            <a href="#" class="btn custom-badge rounded-5 mb-2 "><strong>CONTACT</strong></a>
+            <h3 class="card-title g-2 mb-4 text-primary">Contact Us</h3>
+            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam facilis asperiores.</p>
+            <p class="">nostrum sint tempore eligendi debitis nesciunt</p>
+        </div>
+    </div>
+    <div class="grille container w-75">  <!-- même width que quasi toutes les sections pour l'homogénité-->
+        <div class="row">
+            <div class="col-12 col-sm-6 mb-4 "> <!--col6 permet de lui faire prendre la moité de la width pour que les deux autres card prennent l'autre moitié entre elles-->
+                <div class="card rounded-0 custom-card h-100 text-center" style="box-shadow: 1px 4px 8px #d7d7d7; border:none">
+                    <div class="card-body">
+                        <div class="icon-contact mb-3">
+                            <i class="fa-solid fa-location-dot" style="color:#0D6EE9; border-radius: 60%; border: #0D6EE9 dotted 2px; height:35%; padding: 10px "></i>
+                        </div>
+                        <h5 class="card-title text-secondary"> Our Address</h5>
+                        <p class="card-text text-secondary">Place de la minoterie 10,1080 Molenbeek-Saint-Jean</p> <!-- text secondary permet de mettre le texte en gris dans les propriétés bootstrap-->
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4"> <!-- la première en col 6 cele là et la suivante sans rien se partageront l'autre moitié des colonnes de manière égale-->
+                <div class="card rounded-0 custom-card text-center" style="box-shadow: 1px 4px 8px #d7d7d7; border:none"> <!-- donne le shadow autour de la card, le rounded-0 permet de faire les coins droits-->
+                    <div class="card-body">
+                        <div class="icon-contact mb-3">
+                            <i class="fa-regular fa-envelope" style="color:#0D6EE9; border-radius: 60%; border: #0D6EE9 dotted 2px; height:35%; padding: 10px "></i> <!-- donne le style de l'icône-->
+                        </div>
+                        <h5 class="card-title text-secondary"> Email us</h5>
+                        <p class="card-text text-secondary">info@molengeek.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card rounded-0 custom-card h-100 text-center" style="box-shadow: 1px 4px 8px #d7d7d7; border:none">
+                    <div class="card-body">
+                        <div class="icon-contact mb-3">
+                            <i class="fa-solid fa-phone" style="color:#0D6EE9; border-radius: 60%; border: #0D6EE9 dotted 2px; height:35%; padding: 10px "></i>
+                        </div>
+                        <h5 class="card-title text-secondary"> Call us</h5>
+                        <p class="card-text text-secondary">+1 5589 55488 55</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex flex-lg-row flex-md-column justify-content-center align-items-center"> <!-- les d-flex va permettre de tout mettre en page dans la section surtout pour le bouton send message-->
+            <div class="col-12 col-md-6 mb-4">
+                <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.773195066936!2d4.343956615747289!3d50.85593097953283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c37878d7e045%3A0xbbe35e45c7254013!2sPlace%20de%20la%20Minoterie%2010%2C%201080%20Molenbeek-Saint-Jean%2C%20Belgique!5e0!3m2!1sen!2sbe!4v1695894097604!5m2!1sen!2sbe" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+                </iframe> <!-- link js dans le head pour importer la carte en live de google -->
+            </div>
+            <form class="col-12 col-md-6 mb-4 p-4" style="box-shadow: 1px 4px 8px #d7d7d7; border:none"> <!-- col 6 car la section prend la moitié avec la carte chacune est en col 6 -->
+                <div class="form  row d-flex justify-content-space-evenly">
+                    <div class="form row col-6 ms-2 mb-4"> <!-- propriétés de mise en page entre les items du form-->
+                        <input type="text" class="form-control rounded-0" placeholder="Your Name">
+                    </div>
+                    <div class="form  row col-6 ms-2 mb-4"> <!-- propriétés de mise en page entre les items du form-->
+                        <input type="text" class="form-control rounded-0" placeholder="Your Email">
+                    </div>
+                    <div class="form-group ms-1 mb-4"> <!-- propriétés de mise en page entre les items du form-->
+                        <input type="text" class="form-control rounded-0 " placeholder="Subject">
+                        </div>
+                        <div class="form-group  ms-1 mb-4"> <!-- propriétés de mise en page entre les items du form-->
+                        <textarea type="text" class="form-control rounded-0" rows="6" placeholder="Your Message"> </textarea>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center"> <!-- d-flex pour pouvoir mettre en page au milieu le bouton-->
+                        <button type="submit" class="btn btn-primary btn-block ms-4 mb-4 " style="width:150px">Send message</button> 
+                        </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<footer class="d-flex pt-4">  <!-- propriétés de mise en page pour le footer le plus gros de la modification est dans le SASS footer-->
+    <div class="d-flex container">
+        <p>© Copyright <strong>MolenGeek</strong>. All Rights Reserved</p>
+        <p>Designed by <span>Molengeek</span></p>
+    </div>
+</footer>
 
 </body>
 </html>
