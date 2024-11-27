@@ -41,7 +41,7 @@
     <div class="container services_options p-3 w-75">
         <div class="row justify-content-center">
             <div class="col-md-6 col-lg-3 mb-4">
-                <div class="card custom-card">
+                <div class="card custom-card" style="box-shadow: 1px 4px 8px #d2d2d2; border:none;">
                     <i class="fa-regular fa-file fa-2xl" style="color: #195ee0; padding-top: 1em ; padding-left: 1em; padding-bottom:1em"></i>        
                     <div class="card-body">
                         <h5 class="card-title">Lorem, ipsum.</h5>
@@ -50,7 +50,7 @@
                 </div>
             </div>
             <div class="col-md-6 col-lg-3 mb-4">
-                <div class="card custom-card">
+                <div class="card custom-card" style="box-shadow: 1px 4px 8px #d2d2d2; border:none;">
                     <i class="fa-solid fa-basketball fa-2xl" style="color: #195ee0; padding-top: 1em ; padding-left: 1em; padding-bottom:1em"></i>                    
                     <div class="card-body">
                         <h5 class="card-title">Lorem, ipsum.</h5>
@@ -58,8 +58,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3 mb-4">
-                <div class="card custom-card">
+            <div class="col-md-6 col-lg-3 mb-4" >
+                <div class="card custom-card" style="box-shadow: 1px 4px 8px #d2d2d2; border:none;">
                     <i class="fa-solid fa-toggle-off fa-2xl" style="color: #195ee0; padding-top: 1em ; padding-left: 1em; padding-bottom:1em"></i>                    
                     <div class="card-body">
                         <h5 class="card-title">Lorem, ipsum.</h5>
@@ -67,8 +67,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3 mb-4">
-                <div class="card custom-card">
+            <div class="col-md-6 col-lg-3 mb-4" >
+                <div class="card custom-card" style="box-shadow: 1px 4px 8px #d2d2d2; border:none;">
                     <i class="fa-solid fa-earth-europe fa-2xl" style="color: #195ee0; padding-top: 1em ; padding-left: 1em; padding-bottom:1em"></i>                    
                     <div class="card-body">
                         <h5 class="card-title">Lorem, ipsum.</h5>
@@ -87,10 +87,10 @@
         <img src="./public/img/testi.jpg" class="d-block w-100" style="height:50Vh" alt="..." id="Jpg2">
       </div>
     <div class="carousel-caption position-absolute start-0 text-center w-100" style="bottom:4rem"> <!-- carousel caption est une propriété déjà existant de sass qui permet d'écrir par dessus le carousel-->
-        <h2 class="text-primary"  style="line-height:5rem"> Testimonial 3</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sed maxime blanditiis? Aliquam libero.</p>
-        <p > Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, laboriosam?</p>
-        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <h2 class="text-primary"  style="padding-bottom:1em"> Testimonial 3</h2>
+        <p style="line-height:0.8em">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sed maxime blanditiis? Aliquam libero.</p>
+        <p style="line-height:0.8em"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, laboriosam?</p>
+        <p style="line-height:0.8em"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev"> <!-- système de bouton pour slider déjà pré enregistré par bootstrap-->
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -178,8 +178,8 @@
         
     <div class="row row-cols-lg-6 cols-md-6 pb-5 align-items-center justify-content-center gap-5 ">  <!-- template bootstrap où j'ai rajouté un gap 5 et un justifycontent center pour la mise en page des card entre elles et dans la section-->
         <div class="col-sm-6">  <!-- col sans rien aide a place les colonnes du grid de manière homogène entre elle , en donnant une valeur aux col on leur fait prendre une certaine place dans la page de 12colonnes par défaut-->
-          <div class="card custom-card " style="box-shadow: 1px 4px 8px #d7d7d7; border:none; border-radius: 0px;"> <!-- le custom card me permet de nouveau de modifier la card avec le style prédéfini , de la manière dont j'ai envie-->
-            <img src="./public/img/team/team-1.jpg" class="card-img-top rounded-0" alt="...">
+          <div class="card custom-card " style="box-shadow: 1px 4px 8px #2180fd25; border:none; border-radius: 5px;"> <!-- le custom card me permet de nouveau de modifier la card avec le style prédéfini , de la manière dont j'ai envie-->
+            <img src="./public/img/team/team-1.jpg" class="card-img-top rounded-1" alt="...">
             <div class="card-body"> <!-- changement de style dans le SASS concerné-->
               <h5 class="card-title bold">Walter White</h5>
               <p class="card-text text-secondary">Chief executive officer</p>
@@ -187,8 +187,8 @@
           </div>
         </div>
         <div class="col-sm-6">
-          <div class="card custom-card" style="box-shadow: 1px 4px 8px #d7d7d7; border:none; border-radius: 0px;">
-            <img src="./public/img/team/team-2.jpg" class="card-img-top rounded-0" alt="...">
+          <div class="card custom-card" style="box-shadow: 1px 4px 8px #2180fd25; border:none; border-radius: 5px;">
+            <img src="./public/img/team/team-2.jpg" class="card-img-top rounded-1" alt="...">
             <div class="card-body">
               <h5 class="card-title">Sarah Jhonson</h5>
               <p class="card-text text-secondary"> Product manager</p>
@@ -196,8 +196,8 @@
           </div>
         </div>
         <div class="col-sm-6">
-          <div class="card custom-card" style="box-shadow: 1px 4px 8px #d7d7d7; border:none; border-radius: 0px;">
-            <img src="./public/img/team/team-3.jpg" class="card-img-top rounded-0" alt="...">
+          <div class="card custom-card" style="box-shadow: 1px 4px 8px #2180fd25; border:none; border-radius: 5px;">
+            <img src="./public/img/team/team-3.jpg" class="card-img-top rounded-1" alt="...">
             <div class="card-body">
               <h5 class="card-title">William Anderson </h5>
               <p class="card-text text-secondary">CTO</p>
@@ -205,8 +205,8 @@
           </div>
         </div>
         <div class="col-sm-6">
-          <div class="card custom-card" style="box-shadow: 1px 4px 8px #d7d7d7; border:none; border-radius: 0px;">
-            <img src="./public/img/team/team-4.jpg" class="card-img-top rounded-0" alt="...">
+          <div class="card custom-card" style="box-shadow: 1px 4px 8px #2180fd25; border:none; border-radius: 5px;">
+            <img src="./public/img/team/team-4.jpg" class="card-img-top rounded-1" alt="...">
             <div class="card-body">
               <h5 class="card-title">Amanda Jepsen</h5>
               <p class="card-text text-secondary">Accountant</p>
@@ -227,7 +227,7 @@
     <div class="grille container w-75">  <!-- même width que quasi toutes les sections pour l'homogénité-->
         <div class="row">
             <div class="col-12 col-sm-6 mb-4 "> <!--col6 permet de lui faire prendre la moité de la width pour que les deux autres card prennent l'autre moitié entre elles-->
-                <div class="card rounded-0 custom-card h-100 text-center" style="box-shadow: 1px 4px 8px #d7d7d7; border:none">
+                <div class="card rounded-0 custom-card h-100 text-center" style="box-shadow: 1px 4px 8px #d2d2d2; border:none;">
                     <div class="card-body">
                         <div class="icon-contact mb-3">
                             <i class="fa-solid fa-location-dot" style="color:#0D6EE9; border-radius: 60%; border: #0D6EE9 dotted 2px; height:35%; padding: 10px "></i>
@@ -238,7 +238,7 @@
                 </div>
             </div>
             <div class="col mb-4"> <!-- la première en col 6 cele là et la suivante sans rien se partageront l'autre moitié des colonnes de manière égale-->
-                <div class="card rounded-0 custom-card text-center" style="box-shadow: 1px 4px 8px #d7d7d7; border:none"> <!-- donne le shadow autour de la card, le rounded-0 permet de faire les coins droits-->
+                <div class="card rounded-0 custom-card text-center" style="box-shadow: 1px 4px 8px #d2d2d2; border:none;"> <!-- donne le shadow autour de la card, le rounded-0 permet de faire les coins droits-->
                     <div class="card-body">
                         <div class="icon-contact mb-3">
                             <i class="fa-regular fa-envelope" style="color:#0D6EE9; border-radius: 60%; border: #0D6EE9 dotted 2px; height:35%; padding: 10px "></i> <!-- donne le style de l'icône-->
@@ -249,7 +249,7 @@
                 </div>
             </div>
             <div class="col mb-4">
-                <div class="card rounded-0 custom-card h-100 text-center" style="box-shadow: 1px 4px 8px #d7d7d7; border:none">
+                <div class="card rounded-0 custom-card h-100 text-center" style="box-shadow: 1px 4px 8px #d2d2d2; border:none;">
                     <div class="card-body">
                         <div class="icon-contact mb-3">
                             <i class="fa-solid fa-phone" style="color:#0D6EE9; border-radius: 60%; border: #0D6EE9 dotted 2px; height:35%; padding: 10px "></i>
@@ -272,7 +272,7 @@
                 referrerpolicy="no-referrer-when-downgrade">
                 </iframe> <!-- link js dans le head pour importer la carte en live de google -->
             </div>
-            <form class="col-12 col-md-6 mb-4 p-4 " style="box-shadow: 1px 4px 8px #d7d7d7; border:none; height: 60%"> <!-- col 6 car la section prend la moitié avec la carte chacune est en col 6 -->
+            <form class="col-12 col-md-6 mb-4 p-4 " style="box-shadow: 1px 4px 8px #d2d2d2; border:none; height: 60%"> <!-- col 6 car la section prend la moitié avec la carte chacune est en col 6 -->
                 <div class="form  row d-flex justify-content-space-evenly">
                     <div class="form row col-6 ms-2 mb-4"> <!-- propriétés de mise en page entre les items du form-->
                         <input type="text" class="form-control rounded-0" placeholder="Your Name">
