@@ -11,10 +11,10 @@
 <body>
 <!-- Création de la nav bar -->
 <nav class="navbar navbar-expand-lg d-flex "> <!-- navbar expand lg veut dire que la nav s'étend sur tout la longueur-->
-    <div class="container-fluid d-flex ps-0 align-items-baseline w-75 flex-column flex-lg-row"> <!-- div en flex pour pouvoir changer les élements sur la mêmeligne, le alignitemsbaseline permet de les avoir au même niveau / le flex-column vient agir quand l'écran devient plus petit-->
+    <div class="container-fluid d-flex ps-0 align-items-baseline flex-column flex-lg-row" style="width:65%"> <!-- div en flex pour pouvoir changer les élements sur la mêmeligne, le alignitemsbaseline permet de les avoir au même niveau / le flex-column vient agir quand l'écran devient plus petit-->
         <a id="Logo" class="navbar-brand d-flex mb-3 mb-lg-0" href="#" style="font-size:2em;">Molengeek <span class="text-primary">.</span></a> <!-- le span sert à isoler le . pour lui donner une couleur à part du reste-->
         <div class="navbar-nav flex-row justify-content-center flex-wrap"> <!-- div a bar pour le menu , possibilité de le faire déroulant grâce à son isolement dans la div-->
-            <a class="nav-link me-2 me-lg-3 me-md-1" aria-current="page gap-2" href="#">Home</a>
+            <a class="nav-link me-2 me-lg-3 me-md-1 " aria-current="" href="#">Home</a>
             <a class="nav-link me-2 me-lg-3 me-md-1" href="#">Featured</a> <!-- me mets du margin end , le lg lemet quand il est en px large -->
             <a class="nav-link me-2 me-lg-3 me-md-1" href="#">Testimonials</a>
             <a class="nav-link me-2 me-lg-3 me-md-1" href="#">Services</a>
@@ -24,60 +24,62 @@
     </div>
 </nav>
 <header class=" bg-light d-flex align-items-center justify-content-center"> 
-    <div id="Pic_header"  class=" w-75" > <!--header avec une width de 75 pour aligner le texte dans le header avec la navbar-->
+    <div id="Pic_header "  style="width:65%" > <!--header avec une width de 65pour aligner le texte dans le header avec la navbar-->
         <div class="card_container text-center text-lg-start">
-                <h1>Welcome to <span class="text-primary">Molengeek</span></h1> 
+                <h1 style="font-weight: bold;">Welcome to <span class="text-primary bold" style="font-weight: bold;">Molengeek</span></h1> 
                 <p class="card-text">Mon projet du vendredi</p>
-                <button class=" btn btn-primary px-4 mt-3 "><small>GET STARTED</small></button>
+                <button class=" btn btn-primary px-4 mt-3 " style="width:13em"><small>GET STARTED</small></button>
         </div>    
     </div>
 </header>
-<section class="services pt-5 mb-5 flex-md-column align-content-center">
+<section class="services pt-5 mb-3">
     <div class="container text-center">
-        <a href="#" class="btn custom-badge rounded-5 mb-2"><strong>FEATURED SERVICES</strong></a> <!-- ajout custom-badge a la propriété btn de bootstrap pour pouvoir le personnaliser-->
-        <h3 class="card-title pb-3">Read <span class="text-primary">Featured Services</span></h3><!-- span permet d'isoler l'élément pour lui donner une autre couleur-->
+        <a href="#" class="btn custom-badge rounded-5 mb-2"><strong>FEATURED SERVICES</strong></a>
+        <h3 class="card-title pb-3">Read <span class="text-primary">Featured Services</span></h3>
     </div>
 
-    
-    <div class=" container services_options flex-column flex-lg-row p-3 w-75"> <!-- la width 75 permet de contenir la div centrée sur la page-->
-        <div class="col"> 
-          <div class="card custom-card">
-            <img src="./public/img/team/feuile.png" class="card-img-top pt-1" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Lorem, ipsum.</h5>
-              <p class="card-text">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.</p>
+    <div class="container services_options p-3 w-75">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card custom-card">
+                    <i class="fa-regular fa-file fa-2xl" style="color: #195ee0; padding-top: 1em ; padding-left: 1em; padding-bottom:1em"></i>        
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem, ipsum.</h5>
+                        <p class="card-text">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.</p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card custom-card"> <!-- custom card me permet de donner la taille que je veux au cartes qui ont déjà un style prédéfini par bootstrap-->
-            <img src="./public/img/team/internet.png" class="card-img-top pt-1" alt="..."> <!-- pt = padding top pour que l'image ne touche pas le bord de la carte-->
-            <div class="card-body">
-              <h5 class="card-title">Lorem, ipsum.</h5>
-              <p class="card-text">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.</p>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card custom-card">
+                    <i class="fa-solid fa-basketball fa-2xl" style="color: #195ee0; padding-top: 1em ; padding-left: 1em; padding-bottom:1em"></i>                    
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem, ipsum.</h5>
+                        <p class="card-text">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.</p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card custom-card">
-            <img src="./public/img/team/fuel.png" class="card-img-top pt-1" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Lorem, ipsum.</h5>
-              <p class="card-text">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.</p> <!-- modif du style du txt en sass-->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card custom-card">
+                    <i class="fa-solid fa-toggle-off fa-2xl" style="color: #195ee0; padding-top: 1em ; padding-left: 1em; padding-bottom:1em"></i>                    
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem, ipsum.</h5>
+                        <p class="card-text">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.</p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card custom-card">
-            <img src="./public/img/team/planet.png" class="card-img-top pt-1" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Lorem, ipsum.</h5>
-              <p class="card-text">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.</p>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card custom-card">
+                    <i class="fa-solid fa-earth-europe fa-2xl" style="color: #195ee0; padding-top: 1em ; padding-left: 1em; padding-bottom:1em"></i>                    
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem, ipsum.</h5>
+                        <p class="card-text">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.</p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
 </section>
+
 <div id="carouselExample"  class="carousel slide">
     <div class="carousel-inner">
       <div class="carousel-item active d-flex position-relative" style="filter: brightness(.3)"> <!-- ici l'image est en position relative pour laisser paraitre le txte au dessus-->
@@ -258,7 +260,7 @@
                 </div>
             </div>
         </div>
-        <div class="row d-flex flex-lg-row flex-md-column justify-content-center align-items-center"> <!-- les d-flex va permettre de tout mettre en page dans la section surtout pour le bouton send message-->
+        <div class="row d-flex flex-lg-row flex-md-column justify-content-center g-5" > <!-- les d-flex va permettre de tout mettre en page dans la section surtout pour le bouton send message-->
             <div class="col-12 col-md-6 mb-4">
                 <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.773195066936!2d4.343956615747289!3d50.85593097953283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c37878d7e045%3A0xbbe35e45c7254013!2sPlace%20de%20la%20Minoterie%2010%2C%201080%20Molenbeek-Saint-Jean%2C%20Belgique!5e0!3m2!1sen!2sbe!4v1695894097604!5m2!1sen!2sbe" 
@@ -270,7 +272,7 @@
                 referrerpolicy="no-referrer-when-downgrade">
                 </iframe> <!-- link js dans le head pour importer la carte en live de google -->
             </div>
-            <form class="col-12 col-md-6 mb-4 p-4" style="box-shadow: 1px 4px 8px #d7d7d7; border:none"> <!-- col 6 car la section prend la moitié avec la carte chacune est en col 6 -->
+            <form class="col-12 col-md-6 mb-4 p-4 " style="box-shadow: 1px 4px 8px #d7d7d7; border:none; height: 60%"> <!-- col 6 car la section prend la moitié avec la carte chacune est en col 6 -->
                 <div class="form  row d-flex justify-content-space-evenly">
                     <div class="form row col-6 ms-2 mb-4"> <!-- propriétés de mise en page entre les items du form-->
                         <input type="text" class="form-control rounded-0" placeholder="Your Name">
